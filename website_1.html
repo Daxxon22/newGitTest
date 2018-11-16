@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="scripts.js"></script> 
+    </head>
+
+    <body onload="openPage(event, 'Home')"> 
+        <header>
+            <img src="end.jpg" alt="end logo" height="80px" width="auto" id="main-logo" onclick="openPage(event, 'Home')" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)">
+        </header>
+        
+        <!-- Taken from w3schools topnav bar -->
+        <!-- 
+            <ul class="topnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#planters">What is coding</a></li>
+                <li><a href="#work">Tutorials</a></li>
+                <li><a href="#consult">Training</a></li>
+                <li><a href="#franchise">Reviews</a></li>
+                <li><a href="#franchise">Knowledge Center</a></li>
+                <li><a href="#franchise">Blog</a></li>
+                <li><a href="#franchise">Deals</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+            </ul>
+        </nav> -->
+
+        <!-- tabs taken from https://www.w3schools.com/howto/howto_js_tabs.asp -->
+        <!-- Tab links -->
+        <nav>
+            <div class="tab">
+                <ul class="topnav">
+                    <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
+                    <button class="tablinks" onclick="openPage(event, 'What is coding')">What is coding</button>
+                    <button class="tablinks" onclick="openPage(event, 'Tutorials')">Tutorials</button>
+                    <button class="tablinks" onclick="openPage(event, 'Training')">Training</button>
+                    <button class="tablinks" onclick="openPage(event, 'Reviews')">Reviews</button>
+                    <button class="tablinks" onclick="openPage(event, 'Knowledge Center')">Knowledge Center</button>
+                    <button class="tablinks" onclick="openPage(event, 'Blog')">Blog</button>
+                    <button class="tablinks" onclick="openPage(event, 'Deals')">Deals</button>
+                </ul>
+            </div>
+        </nav>
+
+            
+        <!-- Tab content -->
+        <main>
+            <article id="main-padding">
+                <div id="Home" class="tabcontent">
+                    <header>
+                        <h1 class="entry-title">Free Coding Guide for Beginners</h1>
+                    </header>
+                    <div class="entry-text">
+                        <p>Welcome to Code Conquest – a free online guide to coding for beginners. If you’re someone who wants to learn about coding, but you haven’t got a clue where to start, you’ve come to the right place. This site has all the step-by-step information you need to get started.</p>
+                        <p>Plus, you’ll be pleased to learn that you don’t need to spend a fortune on higher education if you want to become a coder. You can get just as full of a coding education from the many specialized training websites, quality books and cheap classes that exist these days.</p>
+                        <p>With a worldwide shortage of coders, affordability and availability of training services is more important than ever. That’s why this website is here: to help you use these newer coding training services to their full potential. Here are the things you can do here:</p>
+                        <ul>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'What is coding')" >introduce yourself to coding</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Tutorials')">take free coding tutorials</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Training')">find out how to learn a coding language</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Reviews')">compare and select coding training</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Quizzes')">take a few coding quizzes to test your knowledge</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'CheatSheets')">download cheat sheets to use during development</a></li>
+                            <li><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Knowledge Center')">and learn a ton of other useful stuff!</a></li>
+                        </ul>
+                        <section class="subscribeForm">
+                            <h2>Subscribe to End Coding</h2>
+                            <p>Before you forget, the first thing you should do is claim your free subscription to the Code Conquest newsletter. Enter your email address below to be regularly notified of additions and changes to the site. We won’t spam you, and you can unsubscribe at any time.</p>
+                            <form action="https://codeconquest.us8.list-manage.com/subscribe/post?u=7a8977e3bb5068a281cadb3c4&id=5afe4955e8" method="post">
+                                <input name="EMAIL" type="email" placeholder="Email Address">
+                                <input name="subscribe" type="submit" value="Notify Me!">
+                            </form>
+                        </section>
+                            <h2>What is Coding?</h2>
+                        <p>First things first – get the background information before you start. Learn all about coding – how it works, the benefits of learning it, and what today’s common coding languages are.</p>
+                        <p>We’ll also introduce you to some popular forms of coding: web design, web development and app development. You’ll find out what skills are required for each, and what training you’ll need. Once you take in the preliminary info, you’ll be ready to learn coding!</p>
+                        <p><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'What is coding')" >Get a beginner’s introduction to coding here.</a></p>
+                        <section class="trainingRecommendation">
+                            <h2>Training Recommendations</h2>
+                            <p>The cheapest and most convenient way to get trained in coding is to sign up for a specialized training website, invest in a book or enroll in a cheap class.</p>
+                            <p>Code Conquest has gathered up the best training resources for each of the main languages – from C++ to CSS. If you know which one you want to learn, it’s simply a matter of weighing up the available training options.</p>
+                            <p><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Training')" >See all programming training recommendations here.</a></p>
+                        </section>
+                            <h2>Training Reviews</h2>
+                            <p>To compare the different coding training services on the market, head over to Code Conquest’s training reviews section. There are reviews on popular websites like Codecademy and Treehouse, as well as some lesser-known ones. There are also reviews on book series and classes.</p>
+                            <p>Each review details the pros and cons, allowing you to make an informed decision.</p>
+                            <p><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Reviews')" >See all programming training reviews here.</a></p>
+                        <section class="freeCodingTutorials">
+                            <h2>Free Coding Tutorials</h2>
+                            <p>Want to gain an insight into how real code works, without committing to any training? You can do that with Code Conquest’s free beginner coding tutorials.</p>
+                            <p>These tutorials will give you a taste of binary code and four widely used website languages. If you decide you want to dig deeper, each tutorial finishes up with details on how and where to learn more.</p>
+                            <p><a class="tablinks homeList" onmouseover="changeToPointer(this)" onmouseout="changeToDefault(this)" onclick="openPage(event, 'Tutorials')" >You can find the free beginner code tutorials here.</a></p>
+                        </section>
+                    </div>  
+                </div>
+                
+                <div id="What is coding" class="tabcontent">
+                    <h3>What is coding</h3>
+                    <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="Tutorials" class="tabcontent">
+                    <h3>Tutorials</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Training" class="tabcontent">
+                    <h3>Training</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+                
+                <div id="Reviews" class="tabcontent">
+                    <h3>Reviews</h3>
+                    <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="Knowledge Center" class="tabcontent">
+                    <h3>Knowledge Center</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Blog" class="tabcontent">
+                    <h3>Blog</h3>
+                    <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="Deals" class="tabcontent">
+                    <h3>Deals</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Quizzes" class="tabcontent">
+                    <h3>Quizzes</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="CheatSheets" class="tabcontent">
+                        <h3>CheatSheets</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+            </article>
+        </main>
+        
+
+    </body>
+
+</html>
